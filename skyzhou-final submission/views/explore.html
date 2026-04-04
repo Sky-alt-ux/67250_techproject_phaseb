@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonoMuse | Explore</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin="">
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+    <script src="../static/script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo_box">
+                <div class="logo_mark">M</div>
+                <div>
+                    <h1 class="site_title">MonoMuse</h1>
+                    <p class="site_tagline">Contemporary art, technology, and visitor experience</p>
+                </div>
+            </div>
+        </header>
+
+        <nav class="nav_bar" id="myTopnav">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="tickets.html">Tickets Info</a>
+            <a href="buytickets.html">Buy Tickets</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">☰</a>
+        </nav>
+
+        <main class="main">
+            <section class="content_box">
+                <p class="section_label">Visit planning</p>
+                <h2>Explore MonoMuse</h2>
+                <p>
+                    This page gathers essential visitor information into one place so users can quickly learn about the museum,
+                    view media, and find the location without moving through too many pages.
+                </p>
+            </section>
+
+            <section class="content_box">
+                <h2>Gallery</h2>
+
+                <div class="gallery_box">
+                    <img src="MonoMuse.png" alt="Exterior view of the MonoMuse museum building" id="galleryImage" class="gallery_image">
+                    <p id="galleryCaption">Exterior view of the MonoMuse museum building</p>
+                </div>
+            </section>
+
+            <section class="content_box">
+                <h2>Mission</h2>
+                <p>
+                    MonoMuse explores the relationship between art, media, and technology. The museum aims to create an engaging
+                    experience that helps visitors think about how digital tools shape culture, creativity, and everyday life.
+                </p>
+            </section>
+
+            <section class="content_box">
+                <h2>Featured Video</h2>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/WBwNw4WjV7g?si=I9Kn_TLoDpE025rP"
+                    title="MonoMuse featured video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <section class="content_box">
+                <h2>Visitor Information</h2>
+                <table>
+                    <tr>
+                        <th>Information</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>5030 Forbes Avenue, Pittsburgh, PA 15213</td>
+                    </tr>
+                    <tr>
+                        <td>Hours</td>
+                        <td>Tuesday–Sunday: 10:00 AM–5:00 PM, Thursday until 8:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Contact</td>
+                        <td>info@monomuse.org | (412) 666-6666</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="content_box">
+                <h2>Visit Us</h2>
+                <div id="map"></div>
+            </section>
+        </main>
+
+
+        <footer class="footer">
+            <p id="copyYear"></p>
+        </footer>
+    </div>
+</body>
+</html>

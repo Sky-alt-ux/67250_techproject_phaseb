@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Sky Zhou">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonoMuse | Home</title>
+    <link rel="stylesheet" href="./static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+    <script src="./static/script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo_box">
+                <div class="logo_mark">M</div>
+                <div>
+                    <h1 class="site_title">MonoMuse</h1>
+                    <p class="site_tagline">Contemporary art, technology, and visitor experience</p>
+                </div>
+            </div>
+        </header>
+
+        <nav class="nav_bar" id="myTopnav">
+            <a href="index.html">Home</a>
+            <a href="views/explore.html">Explore</a>
+            <a href="views/exhibitions.html">Exhibitions</a>
+            <a href="views/tickets.html">Tickets Info</a>
+            <a href="views/buytickets.html">Buy Tickets</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">☰</a>
+        </nav>
+
+        <main class="main">
+            <section class="welcome_section">
+                <h2 id="greeting">Welcome to MonoMuse</h2>
+                <p>
+                    MonoMuse is a contemporary museum that brings together art, technology, and interactive experiences.
+                    This redesign makes important visitor information easier to find and gives users a shorter, clearer
+                    path to exploring exhibitions and purchasing tickets.
+                </p>
+                <div class="button_group">
+                    <a class="main_button" href="views/buytickets.html">Plan Your Visit</a>
+                    <a class="secondary_button" href="views/exhibitions.html">See Exhibitions</a>
+                </div>
+            </section>
+
+            <section class="content_box">
+                <h2>Museum Overview</h2>
+                <p>
+                    MonoMuse presents exhibitions, artist projects, and digital experiences that help visitors understand
+                    how creativity changes in a technology-driven world. The museum is designed for both first-time visitors
+                    and returning visitors who want a smoother way to find the information they need.
+                </p>
+                <p id="shortIntro">
+                    Explore current exhibitions, check visitor information, and complete a simple ticket purchase process.
+                </p>
+                <div id="longIntro">
+                    <p>
+                        This redesigned website focuses on clarity, organization, and ease of use. Important information such as
+                        hours, location, pricing, and directions is placed more prominently so visitors do not need to search through
+                        too many pages before they can act.
+                    </p>
+                    <p>
+                        The site also adds interactive features such as a gallery, an FAQ section, a map, and a simplified checkout flow
+                        to improve engagement while keeping the experience manageable and clear.
+                    </p>
+                </div>
+                <button id="readMore">Read More</button>
+                <button id="readLess">Read Less</button>
+            </section>
+
+            <section class="info_grid">
+                <section class="info_card">
+                    <h2>Hours</h2>
+                    <p>Tuesday–Sunday: 10:00 AM–5:00 PM</p>
+                    <p>Thursday: 10:00 AM–8:00 PM</p>
+                    <p>Closed Mondays</p>
+                </section>
+
+                <section class="info_card">
+                    <h2>Pricing</h2>
+                    <p>All demo tickets are $18 each.</p>
+                    <p><a href="views/tickets.html">See ticket details</a></p>
+                </section>
+
+                <section class="info_card">
+                    <h2>Location</h2>
+                    <p>5030 Forbes Avenue, Pittsburgh, PA 15213</p>
+                    <p><a href="views/explore.html">Get directions</a></p>
+                </section>
+
+                <section class="info_card">
+                    <h2>Support</h2>
+                    <p>Learn about memberships and donations that support MonoMuse.</p>
+                    <p><a href="views/exhibitions.html#support">Learn more</a></p>
+                </section>
+            </section>
+        </main>
+
+        <aside class="main_img">
+            <section class="side_box">
+                <img src="views/MonoMuse.png" alt="Exterior view of the MonoMuse museum building" class="home_img">
+                <h2>Visit MonoMuse</h2>
+                <p>
+                    Start with current exhibitions, check hours and directions, and then move directly to ticket purchase.
+                    The redesign is meant to reduce confusion and make the planning process more direct.
+                </p>
+            </section>
+        </aside>
+
+        <footer class="footer">
+            <p id="copyYear"></p>
+        </footer>
+    </div>
+</body>
+</html>

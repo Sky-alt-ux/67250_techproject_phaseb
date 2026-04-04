@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonoMuse | Buy Tickets</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+    <script src="../static/script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo_box">
+                <div class="logo_mark">M</div>
+                <div>
+                    <h1 class="site_title">MonoMuse</h1>
+                    <p class="site_tagline">Contemporary art, technology, and visitor experience</p>
+                </div>
+            </div>
+        </header>
+
+        <nav class="nav_bar" id="myTopnav">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="tickets.html">Tickets Info</a>
+            <a href="buytickets.html">Buy Tickets</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">☰</a>
+        </nav>
+
+        <main class="main">
+            <section class="content_box">
+                <p class="section_label">Checkout</p>
+                <h2>Buy Tickets</h2>
+                <p>
+                    This checkout page is designed to keep the purchase process simple by asking only for the information needed
+                    to complete the order.
+                </p>
+            </section>
+
+            <section class="content_box">
+                <form id="ticketForm" novalidate>
+                    <label for="visitDate">Visit Date *</label>
+                    <input type="date" id="visitDate" name="visitDate">
+                    <p class="error_text" id="dateError"></p>
+
+                    <label for="ticketType">Ticket Type *</label>
+                    <select id="ticketType" name="ticketType">
+                        <option value="">Select a ticket type</option>
+                        <option value="General">General</option>
+                        <option value="Student">Student</option>
+                        <option value="Member">Member</option>
+                    </select>
+                    <p class="error_text" id="typeError"></p>
+
+                    <label for="quantity">Quantity (1-10) *</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="10">
+                    <p class="error_text" id="quantityError"></p>
+
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" placeholder="name@example.com">
+                    <p class="error_text" id="emailError"></p>
+
+                    <label for="zipCode">Zip Code</label>
+                    <input type="text" id="zipCode" name="zipCode" maxlength="5" placeholder="Optional">
+                    <p class="error_text" id="zipError"></p>
+
+                    <div class="checkbox_line">
+                        <input type="checkbox" id="mailingList" name="mailingList">
+                        <label for="mailingList">Join our mailing list</label>
+                    </div>
+
+                    <div class="total_box">
+                        <p>Total Price:</p>
+                        <p id="totalPrice">$0</p>
+                    </div>
+
+                    <button type="submit" class="main_button">Place Order</button>
+                </form>
+            </section>
+        </main>
+
+        <aside class="main_img">
+            <section class="side_box">
+                <h2>Visitor reminder</h2>
+                <p>
+                    All demo tickets are $18 each. The form calculates the total automatically and then sends visitors
+                    to a confirmation page.
+                </p>
+            </section>
+        </aside>
+
+        <footer class="footer">
+            <p id="copyYear"></p>
+        </footer>
+    </div>
+</body>
+</html>

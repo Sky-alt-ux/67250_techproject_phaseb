@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonoMuse | Tickets Info</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+    <script src="../static/script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo_box">
+                <div class="logo_mark">M</div>
+                <div>
+                    <h1 class="site_title">MonoMuse</h1>
+                    <p class="site_tagline">Contemporary art, technology, and visitor experience</p>
+                </div>
+            </div>
+        </header>
+
+        <nav class="nav_bar" id="myTopnav">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="tickets.html">Tickets Info</a>
+            <a href="buytickets.html">Buy Tickets</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">☰</a>
+        </nav>
+
+        <main class="main">
+            <section class="content_box">
+                <h2>Ticket Information</h2>
+                <p>
+                    This page gives visitors a quick summary of ticket categories and pricing before they continue to checkout.
+                </p>
+            </section>
+
+            <section class="content_box">
+                <table>
+                    <tr>
+                        <th>Ticket Type</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>General</td>
+                        <td>Standard admission ticket</td>
+                        <td>$18</td>
+                    </tr>
+                    <tr>
+                        <td>Student</td>
+                        <td>Student ticket in this demo checkout flow</td>
+                        <td>$18</td>
+                    </tr>
+                    <tr>
+                        <td>Member</td>
+                        <td>Member ticket in this demo checkout flow</td>
+                        <td>$18</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="content_box">
+                <h2>Visitor Notes</h2>
+                <p>Visitors should select a visit date and complete the checkout form before arriving.</p>
+                <p>This website uses a simulated checkout and does not include real payment processing.</p>
+                <a class="main_button" href="buytickets.html">Continue to Buy Tickets</a>
+            </section>
+        </main>
+
+        <aside class="main_img">
+            <section class="side_box">
+                <h2>Quick access</h2>
+                <p>
+                    Ticket information is separated from checkout so visitors can review pricing first and then move directly to the purchase form.
+                </p>
+            </section>
+        </aside>
+
+        <footer class="footer">
+            <p id="copyYear"></p>
+        </footer>
+    </div>
+</body>
+</html>
